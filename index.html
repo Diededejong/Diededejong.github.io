@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+	   	<meta name="viewport" content="width=device-width">
+	  	<meta name="description" content="Official Website of Merge in Motion">
+	    <meta name="keywords" content="">
+	    <meta name="author" content="Diede de Jong">
+	    <title>Merge in Motion</title>
+	    <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<!--header-->
+		<div class="header">
+			<h1 id="branding"><span class="highlight">Merge</span> in Motion</h1>
+			<div class="container">
+				<!--header on wide screens-->
+				<ul>
+					<li class="removehome"><a href="#">Home</a></li>
+					<li class="remove"><a href="#">Over ons</a></li>
+					<li class="remove"><a href="#">De band</a></li>
+					<li class="remove"><a href="#">Setlist</a></li>
+					<li class="remove"><a href="#">Boek ons</a></li>
+					<li class="remove"><a href="#">Contact</a></li>
+					<li class="remove"><a href="#">Social Media</a></li>
+					<li id="dropdown"> <!--dropdown only visible on smaller screens, li's with "remove" class will be moved to dropdown menu-->
+						<form action="index.php" name="dropdown">
+							<select name="dropdownmenu" id="dropdownmenu" onchange="location = this.value;" style="-webkit-appearance: none;">
+								<option value="#" selected="selected">&#9776;</option>
+								<option value="#">Over ons</option>
+								<option value="#">De band</option>
+								<option value="#">Setlist</option>
+								<option value="#">Boek ons</option>
+								<option value="#">Contact</option>
+								<option value="#">Social Media</option>
+							</select>
+						</form>
+					</li>
+				</ul>
+			</div>
+			<div id="dropdown2"><!--on the smallest screens, home button gets moved to dropdown menu-->
+					<form action="index.php" name="dropdown">
+						<select name="dropdownmenu" id="dropdownmenu" onchange="location = this.value;" style="-webkit-appearance: none;">
+							<option value="#" selected="selected">&#9776;</option>
+							<option value="#">Home</option>
+							<option value="#">Over ons</option>
+							<option value="#">De band</option>
+							<option value="#">Setlist</option>
+							<option value="#">Boek ons</option>
+							<option value="#">Contact</option>
+							<option value="#">Social Media</option>
+						</select>
+					</form>
+				</div>
+		</div>
+		<!--end of header code-->
+		<!--home section-->
+		<div class="home">
+			<div class="container">
+				<h1>Wij zijn Merge in Motion</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			</div>
+		</div>
+	</body>
+</html>
