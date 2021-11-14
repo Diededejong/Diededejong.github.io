@@ -96,7 +96,8 @@ select:active{
 		transition: 0.3s;
 	}
 	#dropdown{
-		display: inline;
+		display: block;
+		float: right;
 	}
 	.header .remove{
 		display: none;
